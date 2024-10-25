@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "ClubWPT Ignore",
+    "version": "1.0",
+    "description": "Ignore specific users in chat",
+    "permissions": ["storage"],
+    "host_permissions": ["*://lobby.clubwpt.com/*"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://lobby.clubwpt.com/*"],
+        "js": ["content.js"]
+    }]
+}

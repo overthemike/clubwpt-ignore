@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .remove-btn {
+            color: red;
+            cursor: pointer;
+        }
+        #nameInput {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        #addBtn {
+            width: 100%;
+            padding: 5px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ignored Users</h2>
+    <input type="text" id="nameInput" placeholder="Enter username">
+    <button id="addBtn">Add to Ignore List</button>
+    <div id="ignoreList"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
